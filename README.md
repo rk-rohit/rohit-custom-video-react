@@ -1,16 +1,13 @@
-# video-react
-
-[![npm version](https://badge.fury.io/js/video-react.svg)](https://badge.fury.io/js/video-react) [![Build Status](https://travis-ci.org/video-react/video-react.svg?branch=master)](https://travis-ci.org/video-react/video-react) [![Package Quality](http://npm.packagequality.com/shield/video-react.svg)](http://packagequality.com/#?package=video-react)
-[![codecov](https://codecov.io/gh/video-react/video-react/branch/master/graph/badge.svg)](https://codecov.io/gh/video-react/video-react)
+# rohit-custom-video-react
 
 Video.React is a web video player built from the ground up for an HTML5 world using React library.
 
 ## Installation
 
-Install `video-react` and **peer dependencies** via NPM
+Install `rohit-custom-video-react` and **peer dependencies** via NPM
 
 ```sh
-npm install --save video-react react react-dom
+npm install --save rohit-custom-video-react react react-dom
 ```
 
 import css in your app or add video-react styles in your page
@@ -38,7 +35,7 @@ Import the components you need, example:
 
 ```js
 import React from 'react';
-import { Player } from 'video-react';
+import { Player } from 'rohit-custom-video-react';
 
 export default props => {
   return (
