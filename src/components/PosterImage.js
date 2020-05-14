@@ -6,12 +6,13 @@ const propTypes = {
   poster: PropTypes.string,
   player: PropTypes.object,
   actions: PropTypes.object,
-  className: PropTypes.string
+  className: PropTypes.string,
+  posterTitle: PropTypes.string
 };
 
-function PosterImage({
-  poster, player, actions, className
-}) {
+function PosterImage(props) {
+  const { poster, player, actions, className, posterTitle } = props;
+
   if (!poster || player.hasStarted) {
     return null;
   }
@@ -27,7 +28,11 @@ function PosterImage({
           actions.play();
         }
       }}
-    />
+    >
+      {posterTitle ? (
+        <h3 className="video-react-poster-title">{posterTitle}</h3>
+      ) : null}
+    </div>
   );
 }
 
